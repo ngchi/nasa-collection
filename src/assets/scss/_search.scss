@@ -1,0 +1,41 @@
+.search {
+  &__ip {
+    width:100%;
+    padding:15px 0;
+    font-size:26px;
+    text-indent:10px;
+    border:1px solid #ceced2;
+    border-radius:3px;
+    margin-bottom:15px;
+    &::placeholder {
+        color:#d3d3d3;
+    }
+  }
+  &__list {
+    &-back {
+      margin:44px 0 44px 0;
+      a {
+        font-size:14px;
+        color:#784CC0;
+      }
+      svg path {
+        fill:#784CC0;
+      }
+      svg {
+        vertical-align: middle;
+        margin-right:5px;
+      }
+    } 
+    h2 {
+      font-size:40px;
+      font-weight: 400;
+      margin-bottom:45px;
+    }
+    &-keywords {
+      margin-bottom:15px;
+      .result {
+          font-size:12px;
+      }
+    }
+  }
+}

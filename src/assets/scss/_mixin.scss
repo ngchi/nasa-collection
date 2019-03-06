@@ -1,0 +1,25 @@
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  -o-transition:$property;
+  transition: $property;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -o-transform:$property;
+  transform: $property;
+}

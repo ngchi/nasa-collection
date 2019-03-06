@@ -1,0 +1,31 @@
+@media only screen and (max-width:1000px) {
+    .block__news {
+        max-width: 50%;
+        flex: 1 50%;
+    }
+    .block__news {
+        &-thumbnails {
+            height: 200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .block__news {
+        max-width: 100%;
+        flex: 100%;
+    }
+    .collection__list {
+        h1 {
+            font-size:20px;
+        }
+        &-add {
+            top:-10px;
+        }
+    }
+    .block__news {
+        &-thumbnails {
+            height: 200px;
+        }
+    }
+}
